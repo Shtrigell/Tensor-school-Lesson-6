@@ -1,10 +1,22 @@
 def string_to_byte(s_b):
+    """Функция перевода строки в байт код.
+    
+    Принимает строку - s_b.
+    Возвращает байт код, в виде списка - s_b_change.
+    
+    """
     s_b_change=[]
     for i in range(len(s_b)):
         for j in s_b[i]:
             s_b_change.append(ord(j))
     return s_b_change
 def byte_to_string(b_s):
+    """Функция перевода байт кода в строку.
+    
+    Принимает байт код - b_s .
+    Возвращает строку, в виде списка - b_s_change.
+    
+    """
     b_s_change=[]
     for i in range(len(b_s)):
         b_s_change.append(chr(b_s[i]))
